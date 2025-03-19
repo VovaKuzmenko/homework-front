@@ -20,7 +20,6 @@ export const HW3 = () => {
   const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
     // setCurrentText(ЧЕГО-ТО НЕ ХВАТАЕТ);
     setCurrentText(event.currentTarget.value)
-    // console.log(currentText)
   };
 
   const handleSave = () => {
@@ -28,7 +27,6 @@ export const HW3 = () => {
     // А ЗАТЕМ УБРАТЬ ЗА СОБОЙ В currentText
     const newText = [currentText, ...texts]
     setTexts(newText)
-    // console.log(texts)
     setCurrentText('')
   };
 
@@ -63,3 +61,9 @@ export const HW3 = () => {
     </div>
   );
 };
+
+// ОШИБКА !!!!
+
+// get input field and text element It should update when the user types
+
+// получить поле ввода и текстовый элемент. Оно должно обновляться, когда пользователь вводит текст.
